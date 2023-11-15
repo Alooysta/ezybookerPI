@@ -4,14 +4,14 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import requests
 
 app = Flask(__name__)
-app.secret_key = 'chaveextremamentesecreta'
+app.secret_key = '(INSERT YOUR KEY)'
 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
 # PARTE AIRTABLE
-AIRTABLE_API_KEY = 'pat5VN5sAAc8On6To.a714f648abb2bcf0ee44ee4eaebaf157353b16610398bd77da6965bc17c863a6'
-AIRTABLE_BASE_ID = 'apprUVgE9R776w84G'
+AIRTABLE_API_KEY = '(INSERT YOUR API)'
+AIRTABLE_BASE_ID = '(INSERT YOUT BASE ID)'
 AIRTABLE_TABLE_NAME = 'tudo'
 
 AIRTABLE_API_ENDPOINT = f'https://api.airtable.com/v0/apprUVgE9R776w84G/tudo'
