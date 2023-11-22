@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/chatbot.css') }}">
+    <link rel="shortcut icon" type="imagex/png" href="static/img/fon.png">
+    <title>EzyBooker - Chatbot</title>
+
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div>
+                <img src="static/img/fon.png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li><a target="_self" href="/">Página inicial</a></li>
+                    <li><a target="_self" href="agendar">Agendamentos</a></li>
+                    <li><a target="_self" class="active" href="chatbot">Chatbot</a></li>
+                    <li><a target="_self" href="informacao">Área do paciente</a></li>
+                    <li><a target="_self" href="login">Login</a></li>
+                    <li><a target="_self" href="register">Registro</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="bottom-left-container">
+                <div class="text-box">
+                    <div class="texto">
+                        <h2>Nosso Assitente Virtual</h2>
+                        <p>Bem-vindo ao nosso assistente virtual dedicado a simplificar a sua experiência! Este chatbot
+                            foi desenvolvido para oferecer uma solução eficiente e amigável para o processo de registro,
+                            login e agendamento. Estamos aqui para tornar sua interação conosco simples e eficaz.
+                            Sinta-se à vontade para explorar as funcionalidades do chatbot e aproveitar ao máximo a
+                            conveniência que ele proporciona. Em caso de dúvidas, estamos prontos para ajudar!</p>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="texto">
+                        <h2>Registro Simplificado</h2>
+                        <p>Seja um novo usuário, o processo de registro é fácil e rápido. O chatbot irá guiá-lo através
+                            dos passos necessários para criar sua conta, garantindo que suas informações sejam
+                            armazenadas com segurança.</p>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="texto">
+                        <h2>Login Rápido e Seguro</h2>
+                        <p>Para os usuários registrados, o login é apenas um toque de distância. O chatbot utiliza
+                            protocolos de segurança avançados para garantir que suas informações pessoais estejam sempre
+                            protegidas. Conecte-se facilmente para acessar os recursos personalizados disponíveis para
+                            você.</p>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="texto">
+                        <h2>Agendamento Descomplicado</h2>
+                        <p>Precisa agendar um compromisso? Nosso chatbot facilita o processo de agendamento. Seja para
+                            consultas, eventos ou serviços, o assistente virtual oferece opções intuitivas para escolher
+                            datas e horários convenientes.</p>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="texto">
+                        <h2>Recursos Adicionais</h2>
+                        <p>Além disso, o chatbot está equipado para fornecer informações adicionais sobre nossos
+                            serviços, responder a perguntas frequentes e oferecer suporte instantâneo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            // Function to load the chatbot script only on the chatbot page
+            function loadChatbot() {
+                var script = document.createElement('script');
+                script.onload = function () {
+                    window.voiceflow.chat.load({
+                        verify: { projectID: '651ed4f1ccd327000781954a' },
+                        url: 'https://general-runtime.voiceflow.com',
+                        versionID: 'production'
+                    });
+                };
+                script.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+                script.type = "text/javascript";
+                document.head.appendChild(script);
+            }
+
+            // Load the chatbot script on this page
+            loadChatbot();
+        </script>
+
+        <footer>
+            <div class="conteudo-footer">
+                <div>
+                    <img src="static\img\fon.png" alt="">
+                </div>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Sobre a empresa</h3>
+                    </li>
+                    <li>
+                        <a target="_self" href="sobre" class="footer-link">Quem somos nós</a>
+                    </li>
+                    <li>
+                        <a target="_self" href="lgpd" class="footer-link">LGPD</a>
+                    </li>
+                    <li>
+                        <a target="_self" href="profissionais" class="footer-link">Profissionais</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Área do paciente</h3>
+                    </li>
+                    <li>
+                        <a target="_self" href="login" class="footer-link">Login</a>
+                    </li>
+                    <li>
+                        <a target="_self" href="register" class="footer-link">Cadastro</a>
+                    </li>
+                    <li>
+                        <a target="_self" href="planos" class="footer-link">Planos e convênios</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="credits">
+                <p>&#169 2023 All rights reserved</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

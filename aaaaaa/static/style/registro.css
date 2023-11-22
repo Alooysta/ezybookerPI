@@ -1,0 +1,79 @@
+.registro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.registro-content input {
+    margin: 7px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 75%;
+    border: 1px solid gray;
+}
+
+.registro-content {
+    max-height: 100vh;
+    width: 600px;
+    background: #ebe6e6;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(214, 212, 212);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.registro-content h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registro .content {
+    margin-top: 20px;
+    height: 740px;
+}
+
+.registro .content li {
+    text-align: left;
+    padding-left: 70px;
+}
+
+.registro-content h4 {
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 200;
+    color: gray;
+}
+
+#registro {
+    width: 150px;
+    margin-left: 200px;
+}
+
+.button-2 {
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgb(78, 75, 75);
+    color: #eee4e4;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    text-decoration: none;
+    transition: 0.4s;
+    width: 420px;
+    border: 1px solid grey;
+    margin-left: 20px;
+}
+
+::placeholder {
+    text-align: center;
+}

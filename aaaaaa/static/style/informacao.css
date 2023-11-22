@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    background-color: #f6f3eb;
+}
+
+main nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2196f3;
+    padding: 0.2rem 1rem 0rem 1rem;
+}
+
+main nav img{
+    width: 90px;
+}
+
+main nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+main nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #52dea1;
+    transition: .5s;
+}
+
+.right-of-top-left {
+    margin-bottom: 110px;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.bottom-left-container {
+    margin-top: 100px;
+    margin-left:100px;
+    display: flex;
+    flex-direction: column;
+    color: #f5f5f5;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+}
+
+.text-box {
+    font-size: 1.6rem;
+    width: 600px;
+    display: list-item;
+    list-style-type: none;
+    background-color: #808080;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.bottom-left-container img {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.right-of-top-left img {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-right: 400px;
+    width: 800px;
+    margin-left: auto;
+}
+
+.texto {
+    max-width: 1400px;
+}
+
+footer {
+    background-color: #2196f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .conteudo-footer{
+    width: 100%;
+    padding: 3.6rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;   
+}
+
+footer .conteudo-footer img{
+    width: 100px;
+}
+
+footer .conteudo-footer div{
+  width: 200px;
+}
+
+footer .conteudo-footer p{
+    width: auto;
+    color: white;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: #ffffff;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #ffffff;
+}
+
+footer .credits {
+    width: 100%;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    padding: 1.0rem 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    footer .conteudo-footer{
+        flex-direction: column;
+    }
+    footer .conteudo-footer div{
+        width: 200px;
+        margin-top: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
+    margin-left: 30%;
+    width: 30%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 160%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    font-size: 2rem;
+    background-color: #808080;
+    color: #fff;
+}
+
+td {
+    font-size: 1.5rem;
+    background-color: #f6f3eb;
+    border: 1px solid #ccc;
+}
+
+.logout-form {
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.logout-form button {
+    background-color: #52dea1;
+    color: white;
+    padding: 20px 100px;
+    font-size: 1.8rem;
+    border: none;
+    margin-right: 450px;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-form button:hover {
+    background-color: #4caf91;
+}

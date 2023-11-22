@@ -1,0 +1,92 @@
+.login {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+}
+
+.login-content{
+    height: 450px;
+    width: 600px;
+    background: #ebe6e6;
+    padding:20px;
+    border-radius: 5px;
+    border: 2px solid rgb(214, 212, 212);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-content h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-content input{
+    margin:7px;
+    margin-left: 30px;
+    padding:10px;
+    width: 75%;
+    border: 1px solid gray;
+}
+
+.login .login-content h2{
+    font-weight: 400;
+}
+
+.button-2{
+    cursor: pointer;
+    display:inline-block;
+    background-color: rgb(78, 75, 75);
+    color: #eee4e4;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    text-decoration: none;
+    transition: 0.4s;
+    width: 420px;
+    border: 1px solid grey;
+    margin-left: 25px;
+}
+
+.login-content a{
+    padding-top: 5px;
+    display: block;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+#Esqueceu:hover{
+    background-color: transparent;
+    color:red;
+    transition: 0s;
+}
+
+#Registro:hover{
+    background-color: transparent;
+    color:red;
+    transition: 0s;
+}
+
+#login{
+    width: 150px;
+    margin-left: 200px;
+}
+
+#1 {
+    margin-left: 300px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
